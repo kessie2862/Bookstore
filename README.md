@@ -89,7 +89,7 @@ Install this project with:
 - Install using Visual Code extention tab
 
 ```sh
-    cd Math-Magicians
+    cd Bookstore
     npm install
 ```
 
@@ -128,7 +128,7 @@ To start this project, run
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/kessie2862/Bookstore/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
