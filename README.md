@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # 📖 Bookstore
 
 <a name="readme-top"></a>
