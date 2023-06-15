@@ -152,4 +152,4 @@ I would like to thank everyone who contributed to the organisation of this proje
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/kessie2862/Math-Magicians/blob/setup-project/LICENSE) licensed.
+This project is [MIT](https://github.com/kessie2862/Bookstore/new/initialize-project) licensed.
