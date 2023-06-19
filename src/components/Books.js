@@ -1,38 +1,31 @@
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { addBook, removeBook } from '../redux/bookSlice';
 import BookList from './BookList';
 import BookForm from './BookForm';
 
 const Books = () => {
-  const books = [
-    {
-      id: 1,
-      type: 'Non-Fiction',
-      title: 'Rich Dad Poor Dad',
-      author: 'Robert Kiyosaki',
-      percentage: 78,
-      chapter: 'Chapter 41',
-    },
-    {
-      id: 2,
-      type: 'Self-help',
-      title: 'Ego is the enemy',
-      author: 'Ryan Holiday',
-      percentage: 12,
-      chapter: 'Chapter 5',
-    },
-    {
-      id: 3,
-      type: 'Economy',
-      title: 'Capital in the Twenty-First Century',
-      author: 'Suzanne Collins',
-      percentage: 0,
-      chapter: 'Introduction',
-    },
-  ];
+  const dispatch = useDispatch();
+  const books = useSelector((state) => state.books);
+
+  const handleAddBook = (title, author) => {
+    const newBook = {
+      item_id: `item${books.length + 1}`,
+      title,
+      author,
+      category: 'Uncategorized',
+    };
+    dispatch(addBook(newBook));
+  };
+
+  const handleRemoveBook = (itemId) => {
+    dispatch(removeBook(itemId));
+  };
 
   return (
     <>
-      <BookList books={books} />
-      <BookForm />
+      <BookList books={books} handleRemoveBook={handleRemoveBook} />
+      <BookForm handleAddBook={handleAddBook} />
     </>
   );
 };
