@@ -16,7 +16,7 @@ function Navigation() {
             Categories
           </Link>
         </div>
-        <UilUser size="30" color="#0290ff" />
+        <UilUser size="31" color="#0290ff" />
       </div>
     </div>
   );
