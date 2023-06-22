@@ -1,13 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/Navigation.css';
+import { UilUser } from '@iconscout/react-unicons';
 
 function Navigation() {
   return (
-    <div>
-      <h2>Bookstore CMS</h2>
-      <Link to="/">Home</Link>
-      <Link to="/categories">Categories</Link>
-      <button type="button">Profile Icon</button>
+    <div className="navbar">
+      <div className="container">
+        <div className="nav-left">
+          <h2 className="logo">Bookstore CMS</h2>
+          <Link to="/" className="home">
+            Books
+          </Link>
+          <Link to="/categories" className="categories">
+            Categories
+          </Link>
+        </div>
+        <UilUser size="31" color="#0290ff" />
+      </div>
     </div>
   );
 }
